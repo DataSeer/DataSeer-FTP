@@ -3,8 +3,7 @@ Documentation - How to send files to the DataSeer FTP server
 
 ## FTP Server information
 
-- Hostname: dev.dataseer.ai
-- IP address: 139.162.174.64
+- Hostname: ftp.dataseer.ai
 
 ## How to send files
 
@@ -12,12 +11,13 @@ Documentation - How to send files to the DataSeer FTP server
 
 #### Preview
 
-![image](https://github.com/user-attachments/assets/d2405ced-8570-4c65-b896-331fd6d98cf3)
+![image](https://github.com/user-attachments/assets/884c7858-c321-4687-a8dd-3b6e37300007)
+
 
 #### More information
 
 1. Enter the DataSeer FTP Hostname & your FTP login details
-      * Host: dev.dataseer.ai (or 139.162.174.64)
+      * Host: ftp.dataseer.ai
       * Username: dataseer (replace it with your username)
       * Password: *******
 
