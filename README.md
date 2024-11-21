@@ -1,5 +1,12 @@
 # DataSeer-FTP
+
 Documentation - How to send files to the DataSeer FTP server
+
+## Table of Contents
+- [FTP Server information](#ftp-server-information)
+- [How to send files](#how-to-send-files)
+  - [Using FileZilla](#using-filezilla)
+  - [Using cURL](#using-curl)
 
 ## FTP Server information
 
@@ -56,3 +63,33 @@ Status:	File transfer successful, transferred 6 B in 1 second
 Status:	Retrieving directory listing of "/upload"...
 Status:	Directory listing of "/upload" successful
 ```
+
+---
+
+### Using cURL
+
+Files & folders can be uploaded to the DataSeer FTP server using the following cURL command lines :
+
+#### Preview
+
+```
+#------------------------------------------------------------------------------------------------
+# Upload the file ‘/path/to/my/file.txt’ (‘Local Site’) to the ‘/upload/’ folder (‘Remote Site’).
+#------------------------------------------------------------------------------------------------
+# Replace USER & PASSWORD with your credentials
+# Replace "/path/to/my/file.txt" with the path to be uploaded
+#------------------------------------------------------------------------------------------------
+
+$ curl --ssl-reqd --tlsv1.3 --insecure --user USER:PASSWORD -T "/path/to/my/file.txt" --ftp-pasv --progress-bar ftp://ftp.dataseer.ai:21/upload/
+```
+
+#### More information
+
+| Argument | Description | Required |
+|----------|-------------|----------|
+| `--ssl-reqd --tlsv1.3 --insecure` | SSL/TLS arguments for secure connection | Yes |
+| `--user USER:PASSWORD` | User credentials used for authentication | Yes |
+| `-T "/path/to/my/file.txt"` | Path to the file to upload | Yes |
+| `--ftp-pasv` | Enable FTP passive mode | Yes |
+| `--progress-bar` | Display upload progress bar | No |
+| `ftp://ftp.dataseer.ai:21/upload/` | FTP server address and target folder | Yes |
