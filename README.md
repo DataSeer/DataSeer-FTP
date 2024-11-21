@@ -68,7 +68,7 @@ Status:	Directory listing of "/upload" successful
 
 ### Using cURL
 
-Files & folders can be uploaded to the DataSeer FTP server using the following cURL command lines :
+Files & folders can be uploaded to the DataSeer FTP server using the following cURL command line :
 
 #### Preview
 
