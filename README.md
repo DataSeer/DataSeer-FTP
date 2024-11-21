@@ -11,8 +11,7 @@ Documentation - How to send files to the DataSeer FTP server
 
 #### Preview
 
-![image](https://github.com/user-attachments/assets/884c7858-c321-4687-a8dd-3b6e37300007)
-
+![image](https://github.com/user-attachments/assets/2aaa997b-f8f0-4dbb-9ca3-c12233646684)
 
 #### More information
 
