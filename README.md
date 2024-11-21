@@ -80,7 +80,7 @@ Files & folders can be uploaded to the DataSeer FTP server using the following c
 # Replace "/path/to/my/file.txt" with the path to be uploaded
 #------------------------------------------------------------------------------------------------
 
-$ curl --ssl-reqd --tlsv1.3 --insecure --user USER:PASSWORD -T "/path/to/my/file.txt" --ftp-pasv --progress-bar ftp://ftp.dataseer.ai:21/upload/
+curl --ssl-reqd --tlsv1.3 --insecure --user USER:PASSWORD -T "/path/to/my/file.txt" --ftp-pasv --progress-bar ftp://ftp.dataseer.ai:21/upload/
 ```
 
 #### More information
