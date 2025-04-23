@@ -43,11 +43,13 @@ Status:	Directory listing of "/" successful
 ```
 
 3. Go to the desired folder (‘Remote Site’ section)
-    * By default, an ‘upload’ folder is available
     * Folders can be created if necessary
+
+For example, if I want to send files to an ‘upload’ folder :
 
 _The following information should appear in the GUI_
 ```
+Status:	Creating directory '/upload'...
 Status:	Retrieving directory listing of "/upload"...
 Status:	Directory listing of "/upload" successful
 ```
